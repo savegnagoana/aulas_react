@@ -1,27 +1,54 @@
-.menu_logo{
+.header {
+
+}
+
+.desktop {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #999;
+}
+
+.desktop_options{
+    display: flex;
+    gap: 2rem;
+
+}
+.menu_logo {
     border: 1px solid #aaa;
     display: flex;
     justify-content: space-between;
-    height: 4rem;
-    align-items: center;
-    padding-inline: 1rem;
+
+    padding: 1rem;
 }
 
-.opcoes{
+.options{
     border: 1px solid #ccc;
     width: 10rem;
     padding-block: 1rem;
-
     translate: -100%;
+
+    transition: translate .3s;
 }
 
-.opcoes nav{
+.options nav{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
 
-.opcoes.open{
+.options.open{
     translate: 0;
+}
+
+@media (min-width: 800px){
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
 }
